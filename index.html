@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pokedex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+</head>
+<body>
+  <header>
+    <div id="buttons">
+      <button class="button-19" id="gen1" role="button">Gen 1</button>
+      <button class="button-19" id="gen2" role="button">Gen 2</button>
+      <button class="button-19" id="gen3" role="button">Gen 3</button>
+      <button class="button-19" id="gen4" role="button">Gen 4</button>
+      <button class="button-19" id="gen5" role="button">Gen 5</button>
+      <button class="button-19" id="gen6" role="button">Gen 6</button>
+      <button class="button-19" id="gen7" role="button">Gen 7</button>
+      <button class="button-19" id="gen8" role="button">Gen 8</button>
+    </div>
+  </header>
+  <main>
+    <h2>Selected:</h2>
+    <div>
+      <span id="pkmnSelect">Bulbasaur</span>
+    </div>
+    <div>
+      <h3>Abilities: </h3><span id="pkmnSelectAbilities">Overgrow, Chlorophyll</span>
+    </div>
+    <div>
+      <h3>Height: </h3><span id="pkmnSelectHeight">0.7 m</span><p></p><p></p><p></p><p></p>
+      <h3>Weight: </h3><span id="pkmnSelectWeight">6.9 kg</span>
+    </div>
+    <div id="pkmnSelectImg"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"></div>
+
+    <div>
+      <div id="shinyTipoCont">
+        <h3>Shiny: </h3>
+        <div id="containerShinny">
+          <div id="pkmnSelectImgShinny">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png">
+        </div>
+      </div>
+      </div>
+       <div id="tipoChart">
+          <h3>Base stats:</h3>
+          <div id="chartContainer">
+            <canvas id="myChart" style="width: 200px; height: 150px;"></canvas>
+          </div>
+        </div>
+    </div>
+    <div>
+      <h3 id="h3type">Types: </h3>
+      <div id="pkmnSelectType"><div class="typeSelectDuo"><img src="./iconsTypes/grass.png" style="width: 80px;"><img src="./iconsTypes/poison.png" style="width: 80px;"></div></div>
+    </div>
+    <p></p>
+    <button id="addTeam">Add to your Team</button>
+  </main>
+  <div id='pkmncontainer'>
+    <div id='containerHeader'> 
+      <h1 id="genName">Pokedex Gen 1</h1>
+    </div>
+    <ul id="listPkmns"></ul>
+  </div>
+  <aside>
+    <h3>Team List:</h3>
+    <div id="designList">
+      <div id="chosenNot"></div>
+      <div id="chosenNot"></div>
+      <div id="chosenNot"></div>
+      <div id="chosenNot"></div>
+      <div id="chosenNot"></div>
+      <div id="chosenNot"></div>
+    </div>
+    <button  id="cleanList" role="button">Clean List</button>
+  </aside>
+  </body>
+<script src="script-final.js"></script>
+</html>

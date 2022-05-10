@@ -1,0 +1,412 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+header{
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h1{
+  color: aliceblue;
+}
+html {
+  background: url('https://cutewallpaper.org/21/pixel-art-desktop-background/150-Lovely-Pokemon-Pixel-Background-This-Month-Cameeron-Web.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  height: auto;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.0);
+  display: flex;
+  margin: 0;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+main {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-style: groove;
+  justify-self:flex-start;
+  width: 700px;
+  justify-self: end;
+  height: 850px;
+  margin-top: 100px;
+  position: fixed;
+  margin-right: 630px;
+  border-radius: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pkmnSelectImg{
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 70px;
+  border-style: inset;
+  width: 300px;
+  height: 300px;
+}
+#pkmnSelectImg img{
+  max-width: 100%;
+  max-height: 100%;
+}
+main *{
+  display: flex;
+  margin: 2px;
+  align-items: center;
+}
+main div:nth-child(2){
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  text-shadow: 2px 2px white;
+  margin-top: -3px;
+}
+#firstPageText {
+  position: sticky;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 145px;
+  width: 145px;
+  margin: 2px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10%;
+  transition: all 200ms ease-out;
+}
+#firstPageText:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 35px rgb(255, 255, 255);
+}
+#firstPageText * {
+  padding: 0;
+}
+.icons1{
+  margin: -15px;
+  width: 80px;
+  height: auto;
+  z-index: 0;
+}
+.icons1 img {
+  width: 100%;
+  height: auto;
+}
+.typeIconsSolo {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  width: 58px;
+}
+.typeIconsSolo img{
+  max-width: 100%;
+}
+.typeIconsDuo {
+  height: 20px;
+}
+.typeIconsDuo  *{
+  max-height: 100%;
+  max-width: 50%;
+}
+
+#listPkmns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 3px;
+}
+#pkmncontainer {
+  width: 610px;
+  margin-top: 70px;
+}
+#firstPageText {
+  --b:3px;  /* the thickness */
+  --c:#000; /* the color */
+  width: 145px;
+  min-height: 100px;
+  padding:calc(5*var(--b));
+  position:relative;
+}
+#containerShinny{
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 160px;
+  height: 160px;
+  border-radius: 15px;
+  border-style: inset;
+  display: flex;
+  flex-direction: column;
+}
+#shinyTipoCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+
+}
+#pkmnSelectImgShinny img{
+  height: 160px;
+  width: 160px;
+}
+
+#chartContainer {
+  width: 300px;
+  height:200px;
+  margin-bottom: 20px;
+}
+#myChart {
+  max-width: 100%;
+  max-height: 100% ;
+}
+
+#tipoChart {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  justify-content: center;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#firstPageText::before,
+#firstPageText::after { 
+  content:"";
+  position:absolute;
+  inset:0 0 50% 0;
+  background:
+    linear-gradient(var(--c) 0 0) 50%   0  /calc(100% - 4*var(--b)) var(--b),
+    linear-gradient(var(--c) 0 0) 0%   100%/var(--b) calc(100% - 2*var(--b)),
+    linear-gradient(var(--c) 0 0) 100% 100%/var(--b) calc(100% - 2*var(--b)),
+    conic-gradient(from  90deg,var(--c) 90deg,#0000 0) 0    0/calc(2*var(--b)) calc(2*var(--b)),
+    conic-gradient(from 180deg,var(--c) 90deg,#0000 0) 100% 0/calc(2*var(--b)) calc(2*var(--b));
+  background-repeat:no-repeat;
+}
+#firstPageText::after {
+  transform-origin:bottom;
+  transform:scaleY(-1);
+}
+
+/* CSS */
+.button-19 {
+  appearance: button;
+  background-color: #5db9ff;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+.names {
+  text-shadow: 2px 2px white;
+  font-size: 1.2em;
+}
+#containerHeader {
+  width: 100%;
+  display: flex;
+  color: white;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #e4e4e4; /* width and color */
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0em;
+  font-size: sans-serif;
+  height: 200px;
+}
+aside {
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+  background-image: url('pattern.jpg');
+  margin-top: 250px;
+  border-radius: 0 50px 50px 0;
+  position: fixed;
+  margin-right: 1360px;
+  border-top: #FFDE00 30px solid;
+  border-bottom: #FFDE00 30px solid;
+  border-right: #FFDE00 10px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-shadow: 3px 8px;
+}
+aside h3 {
+ align-self: center;
+ color: white;
+ font-size: 2.0em;
+ font-weight: 900;
+ -webkit-text-stroke: 1px  black; /* width and color */
+ margin-top: 10px;
+}
+#designList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  padding-left: 160px;
+}
+#designList div {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  list-style: none;
+  background: rgba(90, 90, 90, 0.9);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5);
+  border-radius: 15px;
+  border: 3px solid black;
+}
+#addTeam {
+  padding: 15px;
+  border-radius: 10px 5px 10px 0px;
+  font-weight: 900;
+  background-color: #3B4CCA;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+#addTeam:hover {
+  background-color: white;
+  color: #3B4CCA;
+}
+
+#choosenList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  padding-left: 160px;
+}
+#choosenList:nth-child(1) {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  list-style: none;
+  background: rgba(90, 90, 90, 0.9);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5);
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+#chosen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+#chosen:hover {
+  background: rgba(130, 130, 130, 0.9);
+  box-shadow: 0 0 20px rgb(130, 130, 131);
+}
+#chosen img {
+  width: 90%;
+  width: 85px;
+  height: 70px;
+  margin-top: -20px;
+}
+
+#removePkmn {
+  background-color: #FF0000;
+  align-self: flex-end;
+  border-radius: 70%;
+  width: 15px;
+  font-size: 0.7em;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  transition-duration: 0.1s;
+  justify-self: start;
+}
+#removePkmn:hover {
+  background-color: #ff9191;
+}
+#cleanList {
+  border: none;
+  align-self: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: white;
+  transition-duration: 0.4s;
+  border: 2px solid #FFDE00;
+  cursor: pointer;
+  color: #B3A125;
+}
+
+#cleanList:hover {
+  background-color: #B3A125;
+  color:white;
+}
